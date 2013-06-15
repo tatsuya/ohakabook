@@ -16,8 +16,8 @@ block content
               .head
                 p.label-title #{locals.user.name} さんのお墓 
               .offerings
+                p.label-offerings お供え物
                 if offerings
-                  p.label-offerings お供え物
                   each offering in offerings
                     case offering
                       when 'flower'
