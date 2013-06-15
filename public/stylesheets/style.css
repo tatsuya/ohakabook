@@ -1,3 +1,6 @@
+/**
+ * Global
+ */
 .content {
   margin: 2em auto 0;
   padding: 3em 0.5em;
@@ -6,46 +9,108 @@
   margin: auto;
   width: 70%;
 }
+p {
+  color: #333;
+}
+/**
+ * Entrance
+ */
+.splash-head {
+  padding: 6em 2em 0 2em;
+}
+.splash-head p {
+  font-size: 1.1em;
+}
+.splash-head .title {
+  font-weight: bold;
+}
+/**
+ * My grave
+ */
+.my-grave,
+.grave {
+  padding: 1.5em 0 0 2em;
+}
+.my-grave .head .label-title,
+.grave .head .label-title {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.my-grave .offerings,
+.grave .offerings {
+  margin-bottom: 3em;
+}
+.my-grave .offerings .label-offerings,
+.grave .offerings .label-offerings {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.my-grave .offerings .offering,
+.grave .offerings .offering {
+  width: 80px;
+}
+.my-grave .offerings .offering img,
+.grave .offerings .offering img {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+.my-grave .graves .label-graves,
+.grave .graves .label-graves {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.my-grave .graves ul li,
+.grave .graves ul li {
+  margin: 0 0 0.2em -40px;
+  list-style-type: none;
+}
+.my-grave .graves ul li a,
+.grave .graves ul li a {
+  color: #777;
+}
+.my-grave .make-offerings .submit,
+.grave .make-offerings .submit {
+  margin-bottom: 1em;
+}
+.my-grave .make-offerings .offering-types .offering,
+.grave .make-offerings .offering-types .offering {
+  width: 80px;
+  margin: 0 1em 1em 0;
+  display: inline-block;
+  _display: inline;
+}
+.my-grave .make-offerings .offering-types .offering img,
+.grave .make-offerings .offering-types .offering img {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+.my-grave .make-offerings .offering-types .offering .label,
+.grave .make-offerings .offering-types .offering .label {
+  font-size: 13px;
+  text-align: center;
+}
+.my-grave .error,
+.grave .error {
+  margin-left: 1em;
+}
+.my-grave .error span,
+.grave .error span {
+  color: #dd4b39;
+  font-size: 0.8em;
+}
 .form {
   margin: auto;
   width: 50%;
 }
 .form button {
   margin-top: 1em;
-}
-.collapse {
-  display: none;
-}
-.list .offering {
-  width: 80px;
-}
-.profile {
-  padding: 1.5em 0 0 2em;
-}
-.profile .offerings {
-  padding: 1em 0 0 0 ;
-}
-.profile .offerings .offering {
-  width: 80px;
-  margin: 0 1em 1em 0;
-  display: inline-block;
-  _display: inline;
-}
-.profile .offerings .offering img {
-  border: 2px solid #eee;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -khtml-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  width: 80;
-  height: 80px;
-  cursor: pointer;
-}
-.profile .offerings .offering .label {
-  font-size: 13px;
-  text-align: center;
-}
-.profile .offerings .error {
-  color: #dd4b39;
-  font-size: 0.8em;
 }

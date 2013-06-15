@@ -14,10 +14,7 @@ $(function(){
   //   $('.collapse').toggle();
   // });
 
-  $('.offering').click(function(){
-    // var name = console.log($(this).find('img').attr('name'));
-    // console.log(name);
- 
+  $('.offering').click(function(){ 
     var img = $(this).find('img');
     img.toggleClass('selected');
 
@@ -28,13 +25,12 @@ $(function(){
     } else {
       img.css('border-color', '#eee');
     }
-
   });
 
 
-  $('.offerings a.submit').click(function(){
+  $('.make-offerings a.submit').click(function(){
     var user = $(this).data('user');
-    var $offerings = $(this).closest('.offerings').find('.selected');
+    var $offerings = $(this).closest('.make-offerings').find('.selected');
 
     if ($offerings.length > 0) {
       var offerings = [];
@@ -50,8 +46,8 @@ $(function(){
         location.reload();
       });
     } else {
-      var error = '<p>お供え物を選択してください。</p>';
-      $(this).closest('.offerings').find('.error').html(error);
+      var error = '<span>お供え物を選択してください。</span>';
+      $(this).closest('.grave').find('.error').html(error);
     }
   });
 });

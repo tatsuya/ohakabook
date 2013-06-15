@@ -1,3 +1,13 @@
+.pure-menu {
+  font-size: 0.9em;
+}
+.pure-form button {
+  font-size: 0.8em;
+}
 .pure-button {
   padding: 0.3em 0.8em;
+}
+.primary-button {
+  background: #02a6eb;
+  color: #fff;
 }

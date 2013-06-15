@@ -10,6 +10,7 @@ exports.show = function(req, res, next){
       if (err) return next(err);
 
       User.getRange(0, -1, function(err, users){
+        console.log(users);
         if (grave && grave.offerings) {
           res.render('index', {
             offerings: grave.offerings.split(','),
