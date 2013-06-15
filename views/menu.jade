@@ -1,0 +1,15 @@
+.pure-menu.pure-menu-open.pure-menu-fixed.pure-menu-horizontal
+  //- a.pure-menu-heading(style='text-transform: none;') お墓参り.me
+  ul
+    if locals.user
+      li
+        a(href='/') トップ
+      li
+        a(href='/logout') ログアウト
+    else
+      li
+        a(href='/') トップ
+      li
+        a(href='/login') ログイン
+      li
+        a(href='/register') アカウントを作成

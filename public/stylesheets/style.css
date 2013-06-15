@@ -1,0 +1,51 @@
+.content {
+  margin: 2em auto 0;
+  padding: 3em 0.5em;
+}
+.main {
+  margin: auto;
+  width: 70%;
+}
+.form {
+  margin: auto;
+  width: 50%;
+}
+.form button {
+  margin-top: 1em;
+}
+.collapse {
+  display: none;
+}
+.list .offering {
+  width: 80px;
+}
+.profile {
+  padding: 1.5em 0 0 2em;
+}
+.profile .offerings {
+  padding: 1em 0 0 0 ;
+}
+.profile .offerings .offering {
+  width: 80px;
+  margin: 0 1em 1em 0;
+  display: inline-block;
+  _display: inline;
+}
+.profile .offerings .offering img {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  width: 80;
+  height: 80px;
+  cursor: pointer;
+}
+.profile .offerings .offering .label {
+  font-size: 13px;
+  text-align: center;
+}
+.profile .offerings .error {
+  color: #dd4b39;
+  font-size: 0.8em;
+}

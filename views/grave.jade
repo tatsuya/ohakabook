@@ -1,0 +1,41 @@
+extends layout
+
+block content
+  .content.pure-g-r
+    .header.pure-u-1
+      include menu
+
+    if locals.user
+      .main.pure-u-1
+        .pure-g-r
+          .pure-u-1-2
+            img(src='/images/grave.jpg')
+            .list
+              if offerings
+                p このお墓へのお供え物
+                each offering in offerings
+                  case offering
+                    when 'flower'
+                      img.offering(src='/images/bukka.gif', name='flower')
+                    when 'senkou'
+                      img.offering(src='/images/senkou.jpg', name='senkou')
+
+          .pure-u-1-2
+            .profile
+              .offerings
+                .offering
+                  img(src='/images/bukka.gif', name='flower')
+                  .label
+                    span お花
+                .offering
+                  img(src='/images/senkou.jpg', name='senkou')
+                  .label
+                    span 線香
+                br
+                a.pure-button.submit(data-user=name) お供え物をする
+                .error
+    else
+      .main.pure-u-1
+        .pure-g-r
+          .pure-u-1-2
+            img(src='/images/grave.jpg')

@@ -1,0 +1,21 @@
+{
+  "name": "ohakabook",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "start": "node app.js",
+    "restart": "supervisor --debug -e 'node|js|jade|less' app"
+  },
+  "dependencies": {
+    "express": "3.2.5",
+    "jade": "*",
+    "less-middleware": "*",
+    "bcrypt": "*",
+    "async": "*",
+    "redis": "*",
+    "redis-url": "*"
+  },
+  "repository": "",
+  "author": "",
+  "license": "MIT"
+}

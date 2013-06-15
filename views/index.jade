@@ -1,0 +1,37 @@
+extends layout
+
+block content
+  .content.pure-g-r
+    .header.pure-u-1
+      include menu
+
+    if locals.user
+      .main.pure-u-1
+        .pure-g-r
+          .pure-u-1-2
+            img(src='/images/grave.jpg')
+            h1 #{locals.user.name} のお墓
+            .list
+              if offerings
+                p あなたのお墓へのお供え物
+                each offering in offerings
+                  case offering
+                    when 'flower'
+                      img.offering(src='/images/bukka.gif', name='flower')
+                    when 'senkou'
+                      img.offering(src='/images/senkou.jpg', name='senkou')
+
+          .pure-u-1-2
+            .profile
+              .users
+                if users
+                  h4 お墓一覧
+                  ul
+                    each user in users
+                      li
+                        a(href='/' + user.name)= user.name
+    else
+      .main.pure-u-1
+        .pure-g-r
+          .pure-u-1-2
+            img(src='/images/grave.jpg')
